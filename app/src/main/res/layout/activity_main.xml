@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="30dp"
+                      android:background="#e3e6f9">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:paddingHorizontal="20dp" android:background="#5a5457" android:paddingVertical="10dp">
+                <TextView android:layout_width="match_parent" android:layout_height="80dp" android:text="Sample"
+                          android:gravity="center_vertical|right" android:background="#746e75" android:textColor="#000"
+                          android:id="@+id/result"
+                          android:textSize="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <GridLayout android:layout_width="match_parent" android:layout_height="match_parent" android:rowCount="6"
+                    android:background="#665b5a"
+                    android:useDefaultMargins="true"
+                    android:padding="20dp"
+                    android:columnCount="5">
+            <Button android:textColor="#fff" android:text="OFF" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="MRC" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="M-" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="M+" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <TextView android:layout_width="0dp" android:layout_rowWeight="1" android:layout_columnWeight="1"
+                      android:background="#00ffffff"/>
+            <Button android:textColor="#fff" android:text="%" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="SQRT" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="MC" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="MR" android:layout_width="0dp"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="/" android:layout_width="0dp" android:id="@+id/divide"
+                    android:layout_rowWeight="1"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="+/-" android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="7" android:id="@+id/num_7" android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="8" android:id="@+id/num_8" android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="9" android:id="@+id/num_9" android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="*" android:layout_width="0dp" android:id="@+id/multiply"
+                    android:layout_rowWeight="2"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="Music" android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="4" android:id="@+id/num_4"
+                    android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="5" android:id="@+id/num_5"
+                    android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="6" android:id="@+id/num_6"
+                    android:layout_width="0dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="-" android:layout_width="0dp" android:id="@+id/minus"
+                    android:layout_rowWeight="2"
+                    android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="CE" android:id="@+id/clear" android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:background="#fdbb6b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="1" android:id="@+id/num_1"
+                    android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="2" android:id="@+id/num_2"
+                    android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="3" android:id="@+id/num_3"
+                    android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="+" android:layout_width="0dp" android:id="@+id/plus"
+                    android:layout_rowWeight="2"
+                    android:layout_rowSpan="2" android:background="#88848b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#fff" android:text="%" android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:background="#fdbb6b"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="0" android:id="@+id/num_0"
+                    android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="." android:id="@+id/dot"
+                    android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+            <Button android:textColor="#000" android:background="#fff" android:text="=" android:id="@+id/equal"
+                    android:layout_width="0dp" android:layout_rowWeight="2"
+                    android:layout_columnWeight="1"/>
+        </GridLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
